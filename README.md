@@ -82,20 +82,6 @@ To inspect the database, use a SQLite viewer extension in VS Code or DB Browser 
 | GET | `/api/admin/students` | Admin-only student directory |
 | GET | `/health` | Health check |
 
-## Publish on GitHub
-1. Create a repository at https://github.com/new named `smart-study-planner`.
-2. In VS Code terminal, run:
-   ```powershell
-   git init
-   git add .
-   git commit -m "Build Smart Study Planner with student database"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/smart-study-planner.git
-   git push -u origin main
-   ```
-3. Replace `YOUR-USERNAME` with your GitHub username and sign in when prompted.
-4. `.env` and SQLite files are ignored by `.gitignore`. Never commit real credentials.
-
 ## Live deployment
 GitHub Pages cannot host this backend. Use a Node.js host such as Render or Railway:
 - Build command: `npm install`
